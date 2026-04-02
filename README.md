@@ -76,5 +76,7 @@ Edit the shared Data spreadsheet. All copies reflect the changes automatically.
 ## File Structure
 
 ```
-app.gs   — Apps Script bound to the gym spreadsheet
+app.gs                   — Apps Script bound to the gym spreadsheet
+exercises-template.csv   — Template structure for the Exercises sheet
+database.csv             — Sample exercise data for the Data spreadsheet
 ```
