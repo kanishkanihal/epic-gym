@@ -49,7 +49,23 @@ Share it as **Anyone with the link → Viewer**.
 3. Click **Allow access** when prompted
 4. Hide the sheet (right-click → Hide sheet)
 
-### 3. Add the Script
+### 3. Set Up Dropdowns in the Exercises Sheet
+
+There are two cascading dropdowns — column B is set up manually once in the template, column C is generated automatically by the script.
+
+**Column B — Muscle Group**
+
+1. Select the cells in column B where workouts will be entered (e.g. `B9:B100`)
+2. Go to **Data → Data validation**
+3. Set criteria to **Dropdown (from a range)**
+4. Enter: `Data!A2:A`
+5. Save
+
+**Column C — Exercise**
+
+No setup needed. When the user selects a muscle group in column B, the script automatically creates a dropdown in column C with only the exercises that belong to that muscle group.
+
+### 4. Add the Script
 
 1. Open the gym spreadsheet → Extensions → Apps Script
 2. Paste the contents of `app.gs`
